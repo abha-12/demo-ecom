@@ -1,15 +1,14 @@
-[INFO ] 2023-11-07 09:40:39.782 [main] LoginPage - Entered login details for standard user.
-[INFO ] 2023-11-07 09:40:42.306 [main] ProductsPage - Selected the product.
-[INFO ] 2023-11-07 09:40:52.214 [main] E2ETesting - Checkout complete.
-[INFO ] 2023-11-07 09:45:41.323 [main] LoginPage - Entered login details for standard user.
-[INFO ] 2023-11-07 09:45:44.158 [main] ProductsPage - Selected the product.
-[INFO ] 2023-11-07 09:45:46.671 [main] ProductDetailsPage - Added the product to cart.
-[INFO ] 2023-11-07 09:45:49.166 [main] ProductDetailsPage - Clicked on the cart link.
-[INFO ] 2023-11-07 09:45:54.524 [main] E2ETesting - Checkout complete.
-[INFO ] 2023-11-07 09:48:50.041 [main] E2ETesting - -----New Test started.-----
-[INFO ] 2023-11-07 09:48:55.637 [main] LoginPage - Entered login details for standard user.
-[INFO ] 2023-11-07 09:48:58.288 [main] ProductsPage - Selected the product.
-[INFO ] 2023-11-07 09:49:00.801 [main] ProductDetailsPage - Added the product to cart.
-[INFO ] 2023-11-07 09:49:03.246 [main] ProductDetailsPage - Clicked on the cart link.
-[INFO ] 2023-11-07 09:49:08.443 [main] E2ETesting - Checkout complete.
-[INFO ] 2023-11-07 09:49:08.443 [main] E2ETesting - -----Test complete.-----
+[INFO ] 2023-11-15 10:24:11.609 [main] LoginValidationTest - -----New Test started.-----
+[INFO ] 2023-11-15 10:24:11.773 [main] LoginPage - Login Page loaded : true
+[INFO ] 2023-11-15 10:24:12.374 [main] LoginPage - Logging in as standard_user
+[INFO ] 2023-11-15 10:24:14.582 [main] LoginValidationTest - Login successful as standard_user
+[INFO ] 2023-11-15 10:24:14.957 [main] LoginPage - Logging in as locked_out_user
+[INFO ] 2023-11-15 10:24:22.128 [main] LoginValidationTest - Login failed as locked_out_user
+[INFO ] 2023-11-15 10:24:22.464 [main] LoginPage - Logging in as problem_user
+[INFO ] 2023-11-15 10:24:24.661 [main] LoginValidationTest - Login successful as problem_user
+[INFO ] 2023-11-15 10:24:25.120 [main] LoginPage - Logging in as performance_glitch_user
+[INFO ] 2023-11-15 10:24:32.310 [main] LoginValidationTest - Login successful as performance_glitch_user
+[INFO ] 2023-11-15 10:24:32.774 [main] LoginPage - Logging in as error_user
+[INFO ] 2023-11-15 10:24:34.953 [main] LoginValidationTest - Login successful as error_user
+[INFO ] 2023-11-15 10:24:35.400 [main] LoginPage - Logging in as visual_user
+[INFO ] 2023-11-15 10:24:37.601 [main] LoginValidationTest - Login successful as visual_user

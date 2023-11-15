@@ -58,6 +58,13 @@ public class ProductsPage extends BasePage {
 	public boolean isPageLoaded() {
 		return driver.getTitle().equals("Swag Labs");
 	}
+	public void clickMenu() {
+		menuBtn.click();
+	}
+	public LoginPage clickLogout() {
+		logoutLink.click();
+		return new LoginPage();
+	}
 	
 	public ProductDetailsPage clickProduct(String name) throws InterruptedException {
 		for(WebElement p:productNames) {

@@ -17,10 +17,31 @@ public class LoginPage extends BasePage {
 
 	@FindBy(name = "login-button")
 	WebElement loginBtn;
+	
+	@FindBy(xpath = "//button[@class='error-button']")
+	WebElement errorBtn;
 
 	@Override
 	public boolean isPageLoaded() {
-		return usernameTxtBox.isDisplayed();
+		boolean isLoaded=usernameTxtBox.isDisplayed();
+		logger.info("Login Page loaded : "+isLoaded);
+		return isLoaded;
+	}
+	public void enterUsername(String user) {
+		usernameTxtBox.clear();
+		usernameTxtBox.sendKeys(user);
+		logger.info("Logging in as "+user);
+	}
+	public void enterPassword(String pw) {
+		passwordTxtBox.clear();
+		passwordTxtBox.sendKeys(pw);
+	}
+	public ProductsPage clickLogin() {
+		loginBtn.click();
+		return new ProductsPage();
+	}
+	public boolean isErrorMessagePresent() {
+		return errorBtn.isDisplayed();
 	}
 	
 	public ProductsPage loginAsStandardUser() throws InterruptedException {
